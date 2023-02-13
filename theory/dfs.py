@@ -13,3 +13,8 @@ class Node:
         for child in self.children:
             stack += child.dfs()
         return stack
+
+# The stack is initialized with [self.name] because the focus 
+# is only on the NAMES of the nodes and not their objects. 
+# The purpose of the stack in dfs is to store the names 
+# of the nodes visited in the order they were visited.
