@@ -11,7 +11,7 @@ class Node:
     def dfs(self):
         stack = [self.name]
         for child in self.children:
-            stack += child.dfs()
+            stack.extend(child.dfs())
         return stack
 
 # The stack is initialized with [self.name] because the focus 
